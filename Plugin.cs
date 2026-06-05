@@ -13,7 +13,7 @@ using UnityEngine;
 
 namespace AutoGym;
 
-[BepInPlugin("sweet.autogym", "AutoGym", "0.1.2")]
+[BepInPlugin("sweet.autogym", "AutoGym", "1.0.0")]
 public sealed class Plugin : BaseUnityPlugin
 {
     internal static ManualLogSource Log = null!;
