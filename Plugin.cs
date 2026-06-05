@@ -13,7 +13,7 @@ using UnityEngine;
 
 namespace AutoGym;
 
-[BepInPlugin("sweet.autogym", "AutoGym", "0.1.1")]
+[BepInPlugin("sweet.autogym", "AutoGym", "0.1.2")]
 public sealed class Plugin : BaseUnityPlugin
 {
     internal static ManualLogSource Log = null!;
@@ -26,7 +26,7 @@ public sealed class Plugin : BaseUnityPlugin
     {
         Log = Logger;
         Enabled = Config.Bind("General", "Enabled", true, "Automatically completes the hideout gym QTE without pressing the QTE key.");
-        HideWorkoutGear = Config.Bind("Visuals", "Hide Workout Gear", true, "Temporarily hides backpack, rig, armor, helmet, face cover, and eyewear during hideout gym workouts.");
+        HideWorkoutGear = Config.Bind("Visuals", "Hide Workout Gear", true, "Temporarily hides backpack, rig, armor, helmet, headset, face cover, and eyewear during hideout gym workouts.");
         SuccessWindowBias = Config.Bind(
             "Timing",
             "Success Window Bias",
@@ -74,6 +74,7 @@ internal static class WorkoutGearVisibility
         EquipmentSlot.TacticalVest,
         EquipmentSlot.ArmorVest,
         EquipmentSlot.Headwear,
+        EquipmentSlot.Earpiece,
         EquipmentSlot.FaceCover,
         EquipmentSlot.Eyewear
     };

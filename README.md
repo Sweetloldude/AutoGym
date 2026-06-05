@@ -2,7 +2,7 @@
 
 AutoGym is a BepInEx plugin for SPT 4.0+ that automatically completes the hideout gym shrinking-circle QTE after a workout starts.
 
-It is Fika-safe and also has an optional visual cleanup setting that temporarily hides bulky gear during the workout animation so backpacks, rigs, armor, helmets, face covers, and eyewear do not clip through the bench.
+It is Fika-safe and also has an optional visual cleanup setting that temporarily hides bulky gear during the workout animation so backpacks, rigs, armor, helmets, headsets, face covers, and eyewear do not clip through the bench.
 
 ## Features
 
